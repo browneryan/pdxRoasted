@@ -1,2 +1,12 @@
-<label>Search</label>
-<input type="text" name="keyword">
+<p>Add a flavor to your palette</p>
+<form (ngSubmit)="addToPalette($event.target.value)" #flavorForm="ngForm">
+  <select>
+    <option *ngFor="#flavor of flavors" [value]="flavor">
+      {{flavor.name}}
+    </option>
+  </select>
+  <button type="submit">Add</button>
+</form>
+<ul *ngIf="palette_flavors">
+  <li *ngFor="#flav of palette">{{flav}}<button>Remove</button></li>
+</ul>
