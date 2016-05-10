@@ -121,8 +121,11 @@ export class SearchComponent implements OnInit, OnDestroy {
       })
       return flavor_list;
     }).then(function(flavor_list) {
+      console.log("Flavors before stripping out unique: " + flavor_list);
       let unique = that._utilsService.filterUnique(flavor_list);
+      console.log("Unique flavor list: " + unique);
       let no_pal = that.stripPaletteFlavors(unique);
+      console.log("No Palette Flavors in list: " + no_pal);
       that.flavors = no_pal;
       that.flavor = "Choose a flavor";
     });
@@ -133,7 +136,7 @@ export class SearchComponent implements OnInit, OnDestroy {
     let that = this;
     let stripped = [];
     a.forEach(function(flavor) {
-      if(that.palette.indexOf(flavor.toLowerCase()) === -1 ) {
+      if(that.palette.indexOf(flavor) === -1 ) {
         stripped.push(flavor)
       }
     });
