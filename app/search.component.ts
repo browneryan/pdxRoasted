@@ -22,6 +22,8 @@ export class SearchComponent implements OnInit, OnDestroy {
   roasts: any[];
   palette: string[];
   flavor_list: any[];
+  see_all: boolean = false;
+  filter_by: boolean = false;
 
   constructor(
     private _roastService: RoastService,
@@ -35,6 +37,10 @@ export class SearchComponent implements OnInit, OnDestroy {
     }
 
   ngOnInit() {
+
+    this.see_all = this._utilsService.getSeeAll();
+    this.filter_by = this._utilsService.getFilterBy();
+
     if(this._paletteService.isPaletteEmpty()) {
       console.log("Palette was empty!");
     } else {
@@ -50,12 +56,9 @@ export class SearchComponent implements OnInit, OnDestroy {
       console.log("Flavors being set to: " + this.flavors);
     }
 
-    if(this._roastService.isRoastsEmpty()) {
-      console.log("Roasts was empty!");
-      this.getAllRoasts();
-    } else {
-      this.roasts = this._roastService.getRoasts();
+    if(!this._roastService.isRoastsEmpty()) {
       console.log("Roasts being set to: " + this.roasts);
+      this.roasts = this._roastService.getRoasts();
     }
 
   }
@@ -64,6 +67,8 @@ export class SearchComponent implements OnInit, OnDestroy {
     this._paletteService.updatePalette(this.palette);
     this._roastService.updateRoasts(this.roasts);
     this._flavorService.updateFlavors(this.flavors);
+    this._utilsService.setSeeAll(this.see_all);
+    this._utilsService.setFilterBy(this.filter_by);
   }
 
   getAllFlavors() {
@@ -131,6 +136,43 @@ export class SearchComponent implements OnInit, OnDestroy {
     });
   }
 
+  addToPalette() {
+    console.log("addToPalette on Search Component called!");
+    if (this.flavor === 'Choose a flavor') {
+      return;
+    }
+    console.log("Falvor added: " + this.flavor);
+    this.palette.push(this.flavor);
+    this.filterRoasts();
+  }
+
+  removeFromPalette(flavToRemove) {
+    console.log("removeFromPalette on Search Component called!");
+    let i = this.palette.indexOf(flavToRemove);
+    this.palette.splice(i, 1);
+    this.flavor = "Choose a flavor";
+    this.filterRoasts();
+
+    if(this.roasts.length === 0 ) {
+      console.log("no more roasts!");
+    }
+
+  }
+
+  seeAllRoasts() {
+    this.getAllRoasts();
+    this.palette = [];
+    this.filter_by = false;
+    this.see_all = true;
+  }
+
+  filterByFlavor() {
+    this.roasts = [];
+    this.getAllFlavors();
+    this.see_all = false;
+    this.filter_by = true;
+  }
+
   stripPaletteFlavors(a) {
     console.log("stripPaletteFlavors on Search Component called!");
     let that = this;
@@ -142,29 +184,5 @@ export class SearchComponent implements OnInit, OnDestroy {
     });
     return stripped;
   }
-
-  removeFromPalette(flavToRemove) {
-    console.log("removeFromPalette on Search Component called!");
-    let i = this.palette.indexOf(flavToRemove);
-    this.palette.splice(i, 1);
-    this.flavor = "Choose a flavor";
-    this.filterRoasts();
-
-    if(this.roasts.length === 0 ) {
-      this.getAllRoasts();
-    }
-  }
-
-  addToPalette() {
-    console.log("addToPalette on Search Component called!");
-    if (this.flavor === 'Choose a flavor') {
-      return;
-    }
-    console.log("Falvor added: " + this.flavor);
-    this.palette.push(this.flavor);
-    this.filterRoasts();
-  }
-
-
 
 }
