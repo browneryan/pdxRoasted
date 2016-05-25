@@ -8,22 +8,29 @@ a {
 }
 
 .navIcon {
-  z-index: 1;
-  height: 30px;
-  width: 40px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+
   // @include size(40px 40px);
   // @include flexbox(flex, $justify: space-around, $align-items: center);
   // @include position(absolute, 40px null null 45px);
-  flex-wrap: wrap;
-  padding: .4em;
+  // flex-wrap: wrap;
+  // padding: .4em;
   cursor: pointer;
-  border-radius: 15%;
+  display: none;
+  @media screen and #{$brk-mobile} {
+    z-index: 1;
+    height: 30px;
+    width: 40px;
+    @include flexbox(flex, column, space-around, center);
+  }
   .iconbar {
     width: 30px;
     height: 3px;
     background-color: white;
+  }
+}
+
+.mainNav {
+  @media screen and #{$brk-mobile} {
+    display: none;
   }
 }
