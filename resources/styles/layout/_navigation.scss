@@ -44,21 +44,26 @@ nav {
     }
   }
   .mobileNav {
-    position: absolute;
-    height: 94vh;
-    width: 100vw;
-    background: $primaryBlue;
-    @include flexbox($justify: center, $direction: column, $align: center);
-    ul {
-      margin: 0;
-      padding: 0;
-      height: 50vh;
-      @include flexbox($justify: space-between, $direction: column, $align: center);
-      list-style-type: none;
-      a {
-        @include textFormat(30px, lighter, $color: $cream, $l-spacing: 1px);
-        text-decoration: none;
-        text-transform: lowercase;
+    display: none;
+    transition: all 500ms ease-in-out;
+    @media screen and #{$brk-mobile} {
+      transition: all 500ms ease-in-out;
+      position: absolute;
+      height: 94vh;
+      width: 100vw;
+      background: $primaryBlue;
+      @include flexbox($justify: center, $direction: column, $align: center);
+      ul {
+        margin: 0;
+        padding: 0;
+        height: 50vh;
+        @include flexbox($justify: space-between, $direction: column, $align: center);
+        list-style-type: none;
+        a {
+          @include textFormat(30px, lighter, $color: $cream, $l-spacing: 1px);
+          text-decoration: none;
+          text-transform: lowercase;
+        }
       }
     }
   }
