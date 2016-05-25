@@ -37,14 +37,24 @@
       }
     }
   }
+  @media screen and #{$brk-mobile} {
+    width: 100%;
+  }
 }
 
 .homepageRight {
   @include textFormat($color: $primaryBlue);
   background-image: linear-gradient(rgba($cream, 0.45),
     rgba($cream, 0.45)),url("#{$path-img}/beans.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: scroll;
   width: 50%;
   float: right;
   height: 100vh;
   @include flexbox($justify: center, $align:center);
+  @media screen and #{$brk-mobile} {
+    width: 100%;
+  }
 }

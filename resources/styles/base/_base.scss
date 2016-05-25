@@ -12,6 +12,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+div::-webkit-scrollbar {
+  display: none;
+}
+
 button {
   &:focus {
     outline: none;
@@ -22,11 +26,9 @@ button {
   display: none;
 }
 
-// .contentwrapper {
-//   border: 1px solid cyan;
-//   overflow: auto;
-// }
-
-// .pageWrapper {
-//   @include flexbox();
-// }
+.contentwrapper {
+  overflow: auto;
+  @media screen and #{$brk-mobile} {
+    @include flexbox($direction: column);
+  }
+}
