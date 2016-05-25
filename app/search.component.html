@@ -1,31 +1,36 @@
-
 <div class="contentwrapper">
-
-
-<div class="homepageLeft">
-  <div class="logo">
-
+  <div class="homepageLeft">
+    <div class="logo">
+    </div>
+    <div class="logoText">
+      <h1>PDX ROASTED</h1>
+      <h3 class="tagline">Find the best Portland roasted coffee for you.<br>Browse the entire collection, or filter by flavor.</h3>
+      <button (click)="seeAllRoasts()">See all roasts</button>
+      <button id="flavorFilter" (click)="filterByFlavor()">Filter by flavor</button>
+    </div>
+    <div class="search" *ngIf="filter_by">
+      <div *ngIf="roasts.length !== 1">
+        <select [(ngModel)]="flavor">
+          <option selected>Choose a flavor</option>
+          <option *ngFor="#flavor of flavors" [value]="flavor">
+            {{flavor}}
+          </option>
+        </select>
+        <button (click)="addToPalette()">Add</button>
+      </div>
+      <h3>My flavor palette</h3>
+      <div *ngIf="palette.length == 0">
+        <h4>No flavors - try adding some!</h4>
+      </div>
+      <div *ngIf="palette.length > 0">
+        <ul>
+          <li *ngFor="#pal of palette">
+            {{pal}}
+            <button (click)="removeFromPalette(pal)">X</button>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
-  <div class="logoText">
-    <h1>PDX ROASTED</h1>
-    <h3 class="tagline">You choose your flavors.<br>We'll choose your roast. </h3>
-  </div>
-  <div class="search">
-    <!-- <p>Add a flavor to your palette</p> -->
-    <form (ngSubmit)="addToPalette($event.target.value)" #flavorForm="ngForm">
-      <select class="flavorDropdown">
-        <option *ngFor="#flavor of flavors" [value]="flavor">
-          {{flavor.name}}
-        </option>
-      </select>
-      <button id="addFlavor" type="submit">Add</button>
-    </form>
-  </div>
-  <div class="paletteList">
-    <ul *ngIf="palette_flavors">
-      <li *ngFor="#flav of palette">{{flav}}<button>Remove</button></li>
-    </ul>
-  </div>
-</div>
-<search-result-list></search-result-list>
+  <search-result-list [roasts]="roasts"></search-result-list>
 </div>

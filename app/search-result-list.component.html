@@ -1,15 +1,17 @@
 <div class="homepageRight">
-  <h1>Search Result List</h1>
-  <ul>
-    <li *ngFor="#roast of roasts">
-      <p>
-        {{roast.name}}
-      </p>
-      <p>
-        {{roast.description}}
-      </p>
-    </li>
-  </ul>
+  <div *ngIf="roasts.length > 0">
+    <h1>Roasts</h1>
+    <ul>
+      <li *ngFor="#roast of roasts">
+        <p>
+          {{roast.name}}
+        </p>
+        <p>
+          {{roast.description}}
+        </p>
+      </li>
+    </ul>
+  </div>
   <div class="footer">
     <p>&copy; Copyright PDX Roasted 2016 | All Rights Reserved</p>
   </div>
