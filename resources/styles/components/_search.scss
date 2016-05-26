@@ -56,6 +56,7 @@
 }
 
 .homepageRight {
+
   padding: 1em;
   @include textFormat($color: $primaryBlue);
   background-image: linear-gradient(rgba($cream, 0.45),
@@ -68,6 +69,20 @@
   float: right;
   height: 100vh;
   @include flexbox($justify: center, $align:center);
+  h1 {
+    text-transform: uppercase;
+    font-weight: lighter;
+  }
+  ul {
+    list-style-type: none;
+  }
+  .roastName {
+    @include textFormat(22px, $l-spacing: 1px);
+    margin-bottom: 3px;
+  }
+  .roastDescription {
+    margin-top: 0;
+  }
   @media screen and #{$brk-mobile} {
     width: 100%;
   }
