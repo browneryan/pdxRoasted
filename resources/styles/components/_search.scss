@@ -38,6 +38,18 @@
       }
     }
   }
+  .myFlavors {
+    @include textFormat($weight: lighter);
+    text-transform: uppercase;
+  }
+  .noFlavors {
+    @include textFormat($weight: lighter);
+  }
+  ul {
+    text-transform: lowercase;
+    text-decoration:none;
+    list-style-type: circle;
+  }
   @media screen and #{$brk-mobile} {
     width: 100%;
   }

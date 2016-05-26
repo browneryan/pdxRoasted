@@ -23,7 +23,11 @@ div::-webkit-scrollbar {
   display: none;
 }
 
-
+a {
+  &:hover {
+    color: $yellow;
+  }
+}
 
 .hidden {
   display: none !important;

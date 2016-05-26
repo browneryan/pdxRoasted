@@ -17,15 +17,15 @@
         </select>
         <button id="addFlavor" (click)="addToPalette()">Add</button>
       </div>
-      <h3>My flavor palette</h3>
+      <h3 class="myFlavors">My flavor palette</h3>
       <div *ngIf="palette.length == 0">
-        <h4>No flavors - try adding some!</h4>
+        <h4 class="noFlavors">No flavors - try adding some!</h4>
       </div>
       <div *ngIf="palette.length > 0">
         <ul>
           <li *ngFor="#pal of palette">
             {{pal}}
-            <button (click)="removeFromPalette(pal)">X</button>
+            <button id="removeButton" (click)="removeFromPalette(pal)">X</button>
           </li>
         </ul>
       </div>

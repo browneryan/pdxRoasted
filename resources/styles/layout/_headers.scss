@@ -2,6 +2,11 @@
 .header {
   width: 50%;
   position: absolute;
+  a {
+    &:hover {
+      color: $yellow;
+    }
+  }
 }
 //end all page header //
 

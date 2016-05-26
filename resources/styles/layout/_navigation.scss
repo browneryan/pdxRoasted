@@ -5,6 +5,9 @@ html {
 
 a {
   color: white;
+  &:hover {
+    color: $yellow;
+  }
 }
 
 .navIcon {
