@@ -8,7 +8,7 @@ a {
 }
 
 .navIcon {
-  padding: .4em;
+  margin: .4em;
   cursor: pointer;
   display: none;
   @media screen and #{$brk-mobile} {

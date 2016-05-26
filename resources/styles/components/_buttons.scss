@@ -1,11 +1,12 @@
-#addFlavor {
+button {
+  border-radius: 5px;
+  @include textFormat(15px, lighter, $cream, 2px);
+  text-transform: lowercase;
+  padding: 5px 15px 10px 15px;
+  margin: 1%;
+  background:transparent;
   height: 30px;
   border: 1px solid $cream;
-  // border-radius: 5px;
-  width: 70px;
-  @include textFormat(15px, lighter, $cream, 1px);
-  text-transform: uppercase;
-  background:transparent;
   transition: all 300ms ease-in-out;
   &:hover {
     cursor: pointer;
@@ -13,5 +14,8 @@
     border: 1px solid transparent;
     color: $primaryBlue;
     transition: all 300ms ease-in-out;
+  }
+  &:focus {
+    outline: none;
   }
 }

@@ -3,7 +3,8 @@
   width: 50%;
   float: left;
   height: 100vh;
-  @include flexbox($justify: center, $direction: column, $align:center);
+  overflow: scroll;
+  @include flexbox($justify: center, $direction: column, $align:center, $wrap: no-wrap);
   background: $primaryBlue;
   .logo {
     border: 1px solid white;
@@ -23,7 +24,7 @@
   }
   .search {
     width: 90%;
-        margin: 3%;
+    margin-top: 3%;
     .flavorDropdown {
       border: 1px solid transparent;
       height: 30px;
@@ -43,6 +44,7 @@
 }
 
 .homepageRight {
+  padding: 1em;
   @include textFormat($color: $primaryBlue);
   background-image: linear-gradient(rgba($cream, 0.45),
     rgba($cream, 0.45)),url("#{$path-img}/beans.jpg");
