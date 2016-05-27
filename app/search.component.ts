@@ -97,7 +97,7 @@ export class SearchComponent implements OnInit, OnDestroy {
 
     let that = this;
     let palette = this.palette.map(this._utilsService.formatFlavor);
-    console.log(palette);
+    console.log("Your Palette: " + palette);
       this._roastService.filterRoasts(palette).then(function(data) {
         that.roasts = data;
         that.updateFlavorList();
@@ -121,6 +121,7 @@ export class SearchComponent implements OnInit, OnDestroy {
     this._flavorService.getAllFlavors().then(function(flavor_data){
       roast_flavors.forEach(function(flavor) {
         if(flavor_list.indexOf(flavor_data[flavor]) === -1) {
+          console.log("THIS IS THE NAME >>>>>>>>" + flavor);
           flavor_list.push(flavor_data[flavor].name);
         }
       })
