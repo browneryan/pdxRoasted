@@ -4,8 +4,10 @@
     <div class="logoText">
       <h1>PDX ROASTED</h1>
       <h3 class="tagline">Find the best Portland roasted coffee for you.<br>Browse the entire collection, or filter by flavor.</h3>
-      <button id="seeAllRoasts" (click)="seeAllRoasts()">See all roasts</button>
-      <button id="flavorFilter" (click)="filterByFlavor()">Filter by flavor</button>
+      <div class="home-buttons">
+        <button id="seeAllRoasts" (click)="seeAllRoasts()">See all roasts</button>
+        <button id="flavorFilter" (click)="filterByFlavor()">Filter by flavor</button>
+      </div>
     </div>
     <div class="search animated fadeIn" *ngIf="filter_by">
       <div class="add-flavor-content" *ngIf="roasts.length !== 1">

@@ -1,10 +1,15 @@
 .footer {
   @include flexbox($align: flex-end);
   margin: 0 auto;
+  @media screen and #{$brk-mobile} {
+    width: 80%;
+  }
   p {
     @include textFormat(12px, $l-spacing: 1px);
     text-transform: uppercase;
     color: gray;
     opacity: .7;
+    text-align: center;
+    line-height: 20px;
   }
 }

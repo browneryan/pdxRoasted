@@ -35,3 +35,16 @@ button {
 #addFlavor {
   margin-right: 0;
 }
+
+.home-buttons {
+  @media screen and #{$brk-mobile} {
+    @include flexbox($justify: space-between);
+    width: 95%;
+    margin: 0 auto;
+  }
+  button {
+    @media screen and #{$brk-mobile} {
+      margin: 0;
+    }
+  }
+}

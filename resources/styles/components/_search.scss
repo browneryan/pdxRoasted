@@ -30,11 +30,16 @@
     }
     h3 {
       @include textFormat($weight: lighter, $l-height: 1.2);
+      @media screen and #{$brk-mobile} {
+        @include textFormat(1.1em, $weight: lighter, $l-height: 1.5);
+      }
     }
   }
   .search {
     width: 90%;
     margin-top: 25px;
+    border-top: 1px solid $cream;
+    padding-top: 25px;
     .add-flavor-content {
       @media screen and #{$brk-mobile} {
         @include flexbox($align: center);
