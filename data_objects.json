@@ -153,7 +153,7 @@
         "flavors": {
           "caramel": true,
           "molasses": true,
-          "green apple": true
+          "greenapple": true
         },
         "description": "Finca Santa Julia sits on the slopes of Volcan Santa Ana in the Apaneca- Illamatepec mountain range of Western El Salvador. Owned by Alfredo Alvarez, this 65 hectare farm has been producing coffee since 1864. This Red Bourbon lot is wet processed at nearby Beneficio El Manzano. The cup is exquisitely balanced with notes of caramel, molasses, and green apple."
       },
@@ -421,7 +421,8 @@
       "roasts": {
         "sv-santa-julia": true,
         "br-santa-luzia": true,
-        "col-el-paraiso": true
+        "col-el-paraiso": true,
+        "mx-nayarit": true
       }
     },
     "peach": {

@@ -37,8 +37,10 @@ export class UtilsService  {
   }
 
   formatFlavor(flavor) {
+    console.log("The Utility formatFlavor has been called on: " + flavor);
     var flav_no_space = flavor.replace(/[\s-]+/g, ''); // remove all whitespace
     var flav_lwr = flav_no_space.toLowerCase();
+    console.log("The flavor formatted: " + flav_lwr)
     return flav_lwr;
   }
 
