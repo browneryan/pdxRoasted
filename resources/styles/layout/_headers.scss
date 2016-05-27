@@ -19,13 +19,28 @@
   min-height: 1000px;
   display: flex;
   max-width: 100%;
+  @media screen and #{$brk-sm-mobile}{
+    min-height: 850px;
+  }
   .content {
+    @media screen and #{$brk-mobile}{
+      border: 1px solid red;
+      width: 90%;
+      margin: 0 auto;
+      @include flexbox($direction: column, $justify: center);
+    }
     h1 {
       position: relative;
       left: 10%;
       font-size: 100px;
       letter-spacing: 3px;
       padding-top: 150px;
+      @media screen and #{$brk-mobile}{
+        @include textFormat(50px);
+        position: inherit;
+        text-align: center;
+        padding-top: 0px;
+      }
     }
     p {
       position: relative;
@@ -35,6 +50,13 @@
       line-height: 40px;
       letter-spacing: 1px;
       margin: 0px;
+      @media screen and #{$brk-mobile}{
+        width: 90%;
+        line-height: 30px;
+        position: inherit;
+        text-align: center;
+        margin: 0 auto;
+      }
     }
   }
 }
