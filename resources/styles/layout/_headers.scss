@@ -2,6 +2,9 @@
 .header {
   width: 50%;
   position: absolute;
+  @media screen and #{$brk-mobile} {
+    width: 100%;
+  }
   a {
     &:hover {
       color: $yellow;
