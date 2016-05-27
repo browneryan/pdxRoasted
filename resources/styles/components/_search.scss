@@ -1,0 +1,89 @@
+.homepageLeft {
+  color: $cream;
+  width: 50%;
+  float: left;
+  height: 100vh;
+  overflow: scroll;
+  @include flexbox($justify: center, $direction: column, $align:center, $wrap: no-wrap);
+  background: $primaryBlue;
+  .logo {
+    border: 1px solid white;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin-bottom: 5%;
+  }
+  .logoText {
+    width: 90%;
+    h1 {
+      @include textFormat(45px, lighter, $l-spacing: 3px);
+    }
+    h3 {
+      @include textFormat($weight: lighter, $l-height: 1.2);
+    }
+  }
+  .search {
+    width: 90%;
+    margin-top: 3%;
+    .flavorDropdown {
+      border: 1px solid transparent;
+      height: 30px;
+      width: 45%;
+      border-radius: 0%;
+      @include textFormat(15px, lighter, $primaryBlue, 1px);
+      text-transform: lowercase;
+      background: $cream;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .myFlavors {
+    @include textFormat($weight: lighter);
+    text-transform: uppercase;
+  }
+  .noFlavors {
+    @include textFormat($weight: lighter);
+  }
+  ul {
+    text-transform: lowercase;
+    text-decoration:none;
+    list-style-type: circle;
+  }
+  @media screen and #{$brk-mobile} {
+    width: 100%;
+  }
+}
+
+.homepageRight {
+
+  padding: 1em;
+  @include textFormat($color: $primaryBlue);
+  background-image: linear-gradient(rgba($cream, 0.45),
+    rgba($cream, 0.45)),url("#{$path-img}/beans.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: scroll;
+  width: 50%;
+  float: right;
+  height: 100vh;
+  @include flexbox($justify: center, $align:center);
+  h1 {
+    text-transform: uppercase;
+    font-weight: lighter;
+  }
+  ul {
+    list-style-type: none;
+  }
+  .roastName {
+    @include textFormat(22px, $l-spacing: 1px);
+    margin-bottom: 3px;
+  }
+  .roastDescription {
+    margin-top: 0;
+  }
+  @media screen and #{$brk-mobile} {
+    width: 100%;
+  }
+}

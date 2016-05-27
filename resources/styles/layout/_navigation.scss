@@ -5,25 +5,69 @@ html {
 
 a {
   color: white;
+  &:hover {
+    color: $yellow;
+  }
 }
 
 .navIcon {
-  z-index: 1;
-  height: 30px;
-  width: 40px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  // @include size(40px 40px);
-  // @include flexbox(flex, $justify: space-around, $align-items: center);
-  // @include position(absolute, 40px null null 45px);
-  flex-wrap: wrap;
-  padding: .4em;
+  margin: .4em;
   cursor: pointer;
-  border-radius: 15%;
+  display: none;
+  @media screen and #{$brk-mobile} {
+    z-index: 1;
+    height: 30px;
+    width: 40px;
+    @include flexbox(flex, column, space-around, center);
+  }
   .iconbar {
     width: 30px;
     height: 3px;
     background-color: white;
+    border-radius: 2px;
+  }
+}
+
+
+nav {
+  .mainNav {
+    @media screen and #{$brk-mobile} {
+      display: none;
+    }
+    ul {
+      margin-top: 5%;
+      display: flex;
+      list-style-type: none;
+      @include flexbox ($justify: space-around);
+      a {
+        @include textFormat(16px, lighter, $color: $cream, $l-spacing: 1px);
+        text-decoration: none;
+        text-transform: lowercase;
+      }
+    }
+  }
+  .mobileNav {
+    display: none;
+    transition: all 500ms ease-in-out;
+    @media screen and #{$brk-mobile} {
+      transition: all 500ms ease-in-out;
+      position: absolute;
+      height: 94vh;
+      width: 100vw;
+      background: $primaryBlue;
+      @include flexbox($justify: center, $direction: column, $align: center);
+      ul {
+        margin: 0;
+        padding: 0;
+        height: 50vh;
+        @include flexbox($justify: space-between, $direction: column, $align: center);
+        list-style-type: none;
+        a {
+          @include textFormat(30px, lighter, $color: $cream, $l-spacing: 1px);
+          text-decoration: none;
+          text-transform: lowercase;
+        }
+      }
+    }
   }
 }

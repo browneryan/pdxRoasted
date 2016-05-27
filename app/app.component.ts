@@ -1,9 +1,16 @@
 //        (>'-')>  ng2 Core  <('-'<)
-import { Component, OnInit } from 'angular2/core';
+import { Component, OnInit, provide } from 'angular2/core';
 //        (>'-')>  ng2 Router  <('-'<)
-import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
+import {
+  RouteConfig,
+  ROUTER_DIRECTIVES,
+  Location
+ } from 'angular2/router';
 //        (>'-')>  Firebase Service DI  <('-'<)
 import { RoastService } from './roast.service';
+import { PaletteService } from './palette.service';
+import { FlavorService } from './flavor.service';
+import { UtilsService } from './utils.service';
 //        (>'-')>  Components  <('-'<)
 import { HomeComponent } from './home.component';
 import { AboutComponent } from './about.component';
@@ -17,8 +24,10 @@ import { SearchComponent } from './search.component';
     ROUTER_DIRECTIVES
   ],
   providers: [
-    ROUTER_PROVIDERS,
-    RoastService
+    RoastService,
+    PaletteService,
+    FlavorService,
+    UtilsService
   ]
 })
 @RouteConfig([
@@ -47,6 +56,7 @@ import { SearchComponent } from './search.component';
 export class AppComponent {
   site_id: string =  "PDX Roasted";
   tag_line: string = "Find the best Portland roasted coffee for you";
-
-
+  constructor(location: Location) {
+    location.go('/');
+  }
 }

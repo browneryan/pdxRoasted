@@ -1,3 +1,15 @@
+// This is the header that appears on all pages //
+.header {
+  width: 50%;
+  position: absolute;
+  a {
+    &:hover {
+      color: $yellow;
+    }
+  }
+}
+//end all page header //
+
 .aboutHeader {
   background-image: linear-gradient(to bottom, rgba($primaryBlue, 0.8), rgba($primaryBlue, 0.6)), url("/../resources/img/coffee-wood.jpg");
   background-size: cover;
