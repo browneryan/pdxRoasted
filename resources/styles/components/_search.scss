@@ -8,8 +8,8 @@
   background: $primaryBlue;
   .logo {
     border: 1px solid white;
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
     margin-bottom: 5%;
   }
@@ -38,6 +38,11 @@
       }
     }
   }
+  .flavor-palette {
+    border: 2px solid $cream;
+    padding: 0px 15px;
+    margin-top: 23px;
+  }
   .myFlavors {
     @include textFormat($weight: lighter);
     text-transform: uppercase;
@@ -56,10 +61,10 @@
 }
 
 .homepageRight {
-  padding: 1em;
+  padding: 1.5em 4em;
   @include textFormat($color: $primaryBlue);
-  background-image: linear-gradient(rgba($cream, 0.45),
-    rgba($cream, 0.45)),url("#{$path-img}/beans.jpg");
+  background-image: linear-gradient(rgba($cream, 0.6),
+    rgba($cream, 0.6)),url("#{$path-img}/beans.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -68,14 +73,16 @@
   float: right;
   height: 100vh;
   @include flexbox($justify: flex-end);
-  // @include flexbox($justify: center, $align:center);
   h1 {
     text-transform: uppercase;
     font-weight: lighter;
+    padding-bottom: 1%;
+    border-bottom: 1px solid $primaryBlue;
   }
   ul {
     list-style-type: none;
     flex: 1;
+    padding: 0;
   }
   .roastName {
     @include textFormat(22px, $l-spacing: 1px);
