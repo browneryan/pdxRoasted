@@ -24,7 +24,6 @@
   }
   .content {
     @media screen and #{$brk-mobile}{
-      border: 1px solid red;
       width: 90%;
       margin: 0 auto;
       @include flexbox($direction: column, $justify: center);
