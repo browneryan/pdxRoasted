@@ -67,13 +67,15 @@
   width: 50%;
   float: right;
   height: 100vh;
-  @include flexbox($justify: center, $align:center);
+  @include flexbox($justify: flex-end);
+  // @include flexbox($justify: center, $align:center);
   h1 {
     text-transform: uppercase;
     font-weight: lighter;
   }
   ul {
     list-style-type: none;
+    flex: 1;
   }
   .roastName {
     @include textFormat(22px, $l-spacing: 1px);

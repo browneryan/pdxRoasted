@@ -3,8 +3,8 @@
   // bottom: 0;
   // left: 25%;
   // width: 100%;
-  position: relative;
-  bottom: 0;
+  @include flexbox($align: flex-end);
+  margin: 0 auto;
   p {
     @include textFormat(12px, $l-spacing: 1px);
     text-transform: uppercase;
