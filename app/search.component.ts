@@ -168,6 +168,7 @@ export class SearchComponent implements OnInit, OnDestroy {
 
   filterByFlavor() {
     this.roasts = [];
+    this.palette = [];
     this.getAllFlavors();
     this.see_all = false;
     this.filter_by = true;
