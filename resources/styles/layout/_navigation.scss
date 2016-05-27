@@ -14,12 +14,12 @@ a {
   margin: .4em;
   cursor: pointer;
   display: none;
-  @media screen and #{$brk-mobile} {
-    z-index: 1;
-    height: 30px;
-    width: 40px;
-    @include flexbox(flex, column, space-around, center);
-  }
+  // @media screen and #{$brk-mobile} {
+  //   z-index: 1;
+  //   height: 30px;
+  //   width: 40px;
+  //   @include flexbox(flex, column, space-around, center);
+  // }
   .iconbar {
     width: 30px;
     height: 3px;
@@ -32,9 +32,11 @@ a {
 nav {
   .mainNav {
     @media screen and #{$brk-mobile} {
-      display: none;
+      @include flexbox();
     }
     ul {
+      padding: 0px;
+      width: 100%;
       margin-top: 5%;
       display: flex;
       list-style-type: none;

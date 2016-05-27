@@ -27,3 +27,24 @@ button {
     color: $red !important;
   }
 }
+
+#seeAllRoasts {
+  margin-left: 0;
+}
+
+#addFlavor {
+  margin-right: 0;
+}
+
+.home-buttons {
+  @media screen and #{$brk-sm-mobile} {
+    @include flexbox($justify: space-between);
+    width: 95%;
+    margin: 0 auto;
+  }
+  button {
+    @media screen and #{$brk-sm-mobile} {
+      margin: 0;
+    }
+  }
+}

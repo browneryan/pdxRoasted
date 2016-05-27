@@ -4,11 +4,13 @@
     <div class="logoText">
       <h1>PDX ROASTED</h1>
       <h3 class="tagline">Find the best Portland roasted coffee for you.<br>Browse the entire collection, or filter by flavor.</h3>
-      <button id="seeAllRoasts" (click)="seeAllRoasts()">See all roasts</button>
-      <button id="flavorFilter" (click)="filterByFlavor()">Filter by flavor</button>
+      <div class="home-buttons">
+        <button id="seeAllRoasts" (click)="seeAllRoasts()">See all roasts</button>
+        <button id="flavorFilter" (click)="filterByFlavor()">Filter by flavor</button>
+      </div>
     </div>
-    <div class="search" *ngIf="filter_by">
-      <div *ngIf="roasts.length !== 1">
+    <div class="search animated fadeIn" *ngIf="filter_by">
+      <div class="add-flavor-content" *ngIf="roasts.length !== 1">
         <select class="flavorDropdown" [(ngModel)]="flavor">
           <option selected>Choose a flavor</option>
           <option *ngFor="#flavor of flavors" [value]="flavor">
@@ -17,17 +19,19 @@
         </select>
         <button id="addFlavor" (click)="addToPalette()">Add</button>
       </div>
-      <h3 class="myFlavors">My flavor palette</h3>
-      <div *ngIf="palette.length == 0">
-        <h4 class="noFlavors">No flavors - try adding some!</h4>
-      </div>
-      <div *ngIf="palette.length > 0">
-        <ul>
-          <li *ngFor="#pal of palette">
-            {{pal}}
-            <button id="removeButton" (click)="removeFromPalette(pal)">X</button>
-          </li>
-        </ul>
+      <div class="flavor-palette">
+        <h3 class="myFlavors">My flavor palette</h3>
+        <div *ngIf="palette.length == 0">
+          <h4 class="noFlavors">No flavors - try adding some!</h4>
+        </div>
+        <div *ngIf="palette.length > 0">
+          <ul>
+            <li *ngFor="#pal of palette">
+              {{pal}}
+              <button id="removeButton" (click)="removeFromPalette(pal)">X</button>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

@@ -6,37 +6,63 @@
   overflow: scroll;
   @include flexbox($justify: center, $direction: column, $align:center, $wrap: no-wrap);
   background: $primaryBlue;
+  @media screen and #{$brk-mobile} {
+    min-height: 667px;
+  }
   .logo {
     border: 1px solid white;
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
     margin-bottom: 5%;
+    @media screen and #{$brk-mobile} {
+      height: 150px;
+      width: 150px;
+    }
   }
   .logoText {
     width: 90%;
+    @media screen and #{$brk-mobile} {
+      text-align: center;
+    }
     h1 {
       @include textFormat(45px, lighter, $l-spacing: 3px);
     }
     h3 {
-      @include textFormat($weight: lighter, $l-height: 1.2);
+      @include textFormat($weight: lighter, $l-height: 1.3);
+      @media screen and #{$brk-mobile} {
+        @include textFormat(1.1em, $weight: lighter, $l-height: 1.5);
+      }
     }
   }
   .search {
     width: 90%;
-    margin-top: 3%;
-    .flavorDropdown {
-      border: 1px solid transparent;
-      height: 30px;
-      width: 45%;
-      border-radius: 0%;
-      @include textFormat(15px, lighter, $primaryBlue, 1px);
-      text-transform: lowercase;
-      background: $cream;
-      &:focus {
-        outline: none;
+    margin-top: 25px;
+    border-top: 1px solid $cream;
+    padding-top: 25px;
+    .add-flavor-content {
+      @media screen and #{$brk-mobile} {
+        @include flexbox($align: center);
+      }
+      .flavorDropdown {
+        flex: 1;
+        border: 1px solid transparent;
+        height: 30px;
+        width: 45%;
+        border-radius: 0%;
+        @include textFormat(15px, lighter, $primaryBlue, 1px);
+        text-transform: lowercase;
+        background: $cream;
+        &:focus {
+          outline: none;
+        }
       }
     }
+  }
+  .flavor-palette {
+    border: 2px solid $cream;
+    padding: 0px 15px;
+    margin-top: 25px;
   }
   .myFlavors {
     @include textFormat($weight: lighter);
@@ -56,11 +82,10 @@
 }
 
 .homepageRight {
-
-  padding: 1em;
+  padding: 1.5em 4em;
   @include textFormat($color: $primaryBlue);
-  background-image: linear-gradient(rgba($cream, 0.45),
-    rgba($cream, 0.45)),url("#{$path-img}/beans.jpg");
+  background-image: linear-gradient(rgba($cream, 0.6),
+    rgba($cream, 0.6)),url("#{$path-img}/beans.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -68,13 +93,20 @@
   width: 50%;
   float: right;
   height: 100vh;
-  @include flexbox($justify: center, $align:center);
+  @include flexbox($justify: flex-end);
+  @media screen and #{$brk-mobile} {
+    height: auto;
+  }
   h1 {
     text-transform: uppercase;
     font-weight: lighter;
+    padding-bottom: 1%;
+    border-bottom: 1px solid $primaryBlue;
   }
   ul {
     list-style-type: none;
+    flex: 1;
+    padding: 0;
   }
   .roastName {
     @include textFormat(22px, $l-spacing: 1px);
