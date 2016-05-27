@@ -1,32 +1,31 @@
 <div class="contentwrapper">
   <div class="homepageLeft">
-    <div class="logo">
-    </div>
+    <div class="logo"></div>
     <div class="logoText">
       <h1>PDX ROASTED</h1>
       <h3 class="tagline">Find the best Portland roasted coffee for you.<br>Browse the entire collection, or filter by flavor.</h3>
-      <button (click)="seeAllRoasts()">See all roasts</button>
+      <button id="seeAllRoasts" (click)="seeAllRoasts()">See all roasts</button>
       <button id="flavorFilter" (click)="filterByFlavor()">Filter by flavor</button>
     </div>
     <div class="search" *ngIf="filter_by">
       <div *ngIf="roasts.length !== 1">
-        <select [(ngModel)]="flavor">
+        <select class="flavorDropdown" [(ngModel)]="flavor">
           <option selected>Choose a flavor</option>
           <option *ngFor="#flavor of flavors" [value]="flavor">
             {{flavor}}
           </option>
         </select>
-        <button (click)="addToPalette()">Add</button>
+        <button id="addFlavor" (click)="addToPalette()">Add</button>
       </div>
-      <h3>My flavor palette</h3>
+      <h3 class="myFlavors">My flavor palette</h3>
       <div *ngIf="palette.length == 0">
-        <h4>No flavors - try adding some!</h4>
+        <h4 class="noFlavors">No flavors - try adding some!</h4>
       </div>
       <div *ngIf="palette.length > 0">
         <ul>
           <li *ngFor="#pal of palette">
             {{pal}}
-            <button (click)="removeFromPalette(pal)">X</button>
+            <button id="removeButton" (click)="removeFromPalette(pal)">X</button>
           </li>
         </ul>
       </div>
