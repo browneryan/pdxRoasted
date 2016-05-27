@@ -6,15 +6,25 @@
   overflow: scroll;
   @include flexbox($justify: center, $direction: column, $align:center, $wrap: no-wrap);
   background: $primaryBlue;
+  @media screen and #{$brk-mobile} {
+    min-height: 667px;
+  }
   .logo {
     border: 1px solid white;
     height: 250px;
     width: 250px;
     border-radius: 50%;
     margin-bottom: 5%;
+    @media screen and #{$brk-mobile} {
+      height: 150px;
+      width: 150px;
+    }
   }
   .logoText {
     width: 90%;
+    @media screen and #{$brk-mobile} {
+      text-align: center;
+    }
     h1 {
       @include textFormat(45px, lighter, $l-spacing: 3px);
     }
@@ -24,24 +34,32 @@
   }
   .search {
     width: 90%;
-    margin-top: 3%;
-    .flavorDropdown {
-      border: 1px solid transparent;
-      height: 30px;
-      width: 45%;
-      border-radius: 0%;
-      @include textFormat(15px, lighter, $primaryBlue, 1px);
-      text-transform: lowercase;
-      background: $cream;
-      &:focus {
-        outline: none;
+    margin-top: 25px;
+    .add-flavor-content {
+      @media screen and #{$brk-mobile} {
+        @include flexbox($align: center);
+      }
+      .flavorDropdown {
+        flex: 1;
+        border: 1px solid transparent;
+        height: 30px;
+        width: 45%;
+        border-radius: 0%;
+        @include textFormat(15px, lighter, $primaryBlue, 1px);
+        text-transform: lowercase;
+        background: $cream;
+        @media screen and #{$brk-mobile} {
+        }
+        &:focus {
+          outline: none;
+        }
       }
     }
   }
   .flavor-palette {
     border: 2px solid $cream;
     padding: 0px 15px;
-    margin-top: 23px;
+    margin-top: 25px;
   }
   .myFlavors {
     @include textFormat($weight: lighter);
@@ -73,6 +91,9 @@
   float: right;
   height: 100vh;
   @include flexbox($justify: flex-end);
+  @media screen and #{$brk-mobile} {
+    height: auto;
+  }
   h1 {
     text-transform: uppercase;
     font-weight: lighter;

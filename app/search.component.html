@@ -8,7 +8,7 @@
       <button id="flavorFilter" (click)="filterByFlavor()">Filter by flavor</button>
     </div>
     <div class="search animated fadeIn" *ngIf="filter_by">
-      <div *ngIf="roasts.length !== 1">
+      <div class="add-flavor-content" *ngIf="roasts.length !== 1">
         <select class="flavorDropdown" [(ngModel)]="flavor">
           <option selected>Choose a flavor</option>
           <option *ngFor="#flavor of flavors" [value]="flavor">
