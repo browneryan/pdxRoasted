@@ -11,6 +11,8 @@
     </div>
     <div class="search animated fadeIn" *ngIf="filter_by">
       <div class="add-flavor-content" *ngIf="roasts.length !== 1">
+        <p *ngIf="roasts.length == 0">Pick a flavor to see only roasts with that flavor.</p>
+        <p *ngIf="roasts.length > 1">Refine your palette by adding another flavor.</p>  
         <select class="flavorDropdown" [(ngModel)]="flavor">
           <option selected>Choose a flavor</option>
           <option *ngFor="#flavor of flavors" [value]="flavor">
@@ -19,6 +21,7 @@
         </select>
         <button id="addFlavor" (click)="addToPalette()">Add</button>
       </div>
+      <p *ngIf="roasts.length == 1">Remove flavors to search for different roats.</p>
       <div class="flavor-palette">
         <h3 class="myFlavors">My flavor palette</h3>
         <div *ngIf="palette.length == 0">
@@ -28,7 +31,7 @@
           <ul>
             <li *ngFor="#pal of palette">
               {{pal}}
-              <button id="removeButton" (click)="removeFromPalette(pal)">X</button>
+              <button id="removeButton" (click)="removeFromPalette(pal)">Remove</button>
             </li>
           </ul>
         </div>

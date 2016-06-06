@@ -21,8 +21,8 @@ button {
 }
 
 #removeButton {
-  border: none;
-  text-transform: uppercase;
+  // border: none;
+  // text-transform: uppercase;
   &:hover {
     color: $red !important;
   }
