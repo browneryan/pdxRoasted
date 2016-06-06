@@ -40,6 +40,9 @@
     margin-top: 25px;
     border-top: 1px solid $cream;
     padding-top: 25px;
+    p {
+      @include textFormat(15px, lighter, $cream, 1px);
+    }
     .add-flavor-content {
       @media screen and #{$brk-mobile} {
         @include flexbox($align: center);

@@ -1,0 +1,12 @@
+.contactHeader {
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+
+.contactHeader.ng-enter {
+  opacity: 0;
+}
+
+.contactHeader.ng-enter-active {
+  opacity: 0.5;
+}
