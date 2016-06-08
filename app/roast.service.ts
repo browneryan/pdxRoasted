@@ -10,6 +10,11 @@ export class RoastService {
     this.roasts = [];
   }
 
+  // getAllRoasts() {
+  //   return this.ref.once('value').then(function(snapshot) {
+  //     return snapshot.val();
+  //   });
+  // }
   getAllRoasts() {
     return this.ref.once('value').then(function(snapshot) {
       return snapshot.val();
