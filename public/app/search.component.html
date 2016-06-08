@@ -1,0 +1,42 @@
+<div class="contentwrapper">
+  <div class="homepageLeft">
+    <div class="logo"></div>
+    <div class="logoText">
+      <h1>PDX ROASTED</h1>
+      <h3 class="tagline">Find the best Portland roasted coffee for you.<br>Browse the entire collection, or filter by flavor.</h3>
+      <div class="home-buttons">
+        <button id="seeAllRoasts" (click)="seeAllRoasts()">See all roasts</button>
+        <button id="flavorFilter" (click)="filterByFlavor()">Filter by flavor</button>
+      </div>
+    </div>
+    <div class="search animated fadeIn" *ngIf="filter_by">
+      <div class="add-flavor-content" *ngIf="roasts.length !== 1">
+        <p *ngIf="roasts.length == 0">Pick a flavor to see only roasts with that flavor.</p>
+        <p *ngIf="roasts.length > 1">Refine your palette by adding another flavor.</p>  
+        <select class="flavorDropdown" [(ngModel)]="flavor">
+          <option selected>Choose a flavor</option>
+          <option *ngFor="#flavor of flavors" [value]="flavor">
+            {{flavor}}
+          </option>
+        </select>
+        <button id="addFlavor" (click)="addToPalette()">Add</button>
+      </div>
+      <p *ngIf="roasts.length == 1">Remove flavors to search for different roats.</p>
+      <div class="flavor-palette">
+        <h3 class="myFlavors">My flavor palette</h3>
+        <div *ngIf="palette.length == 0">
+          <h4 class="noFlavors">No flavors - try adding some!</h4>
+        </div>
+        <div *ngIf="palette.length > 0">
+          <ul>
+            <li *ngFor="#pal of palette">
+              {{pal}}
+              <button id="removeButton" (click)="removeFromPalette(pal)">Remove</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <search-result-list [roasts]="roasts"></search-result-list>
+</div>

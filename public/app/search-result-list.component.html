@@ -1,0 +1,18 @@
+<div class="homepageRight">
+  <div class="animated fadeIn" *ngIf="roasts.length > 0">
+    <h1>Roasts</h1>
+    <ul>
+      <li *ngFor="#roast of roasts">
+        <p class="roastName">
+          {{roast.name}}
+        </p>
+        <p class="roastDescription">
+          {{roast.description}}
+        </p>
+      </li>
+    </ul>
+  </div>
+  <div class="footer">
+    <p>&copy; Copyright PDX Roasted 2016 | All Rights Reserved</p>
+  </div>
+</div>
