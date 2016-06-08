@@ -25,6 +25,7 @@
     "gulp-shell": "0.5.2",
     "gulp-sourcemaps": "1.6.0",
     "gulp-util": "3.0.7",
+    "gulp-typescript": "^2.8.0",
     "typescript": "1.8.2",
     "typings": "1.0.4"
   }
