@@ -95,15 +95,6 @@ export class SearchComponent implements OnInit, OnDestroy {
       console.log(that.roasts);
     });
   }
-  // getAllRoasts() {
-  //   console.log("getAllRoasts on Search Component called!");
-  //   let that = this;
-  //   that._roastService.getAllRoasts().then(function(data){
-  //     console.log(data);
-  //     that.roasts = Object.keys(data).map(key => {return data[key]});
-  //     console.log(that.roasts);
-  //   });
-  // }
 
   filterRoasts() {
     console.log("filterRoasts on Search Component called!");
