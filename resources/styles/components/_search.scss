@@ -110,6 +110,12 @@
     list-style-type: none;
     flex: 1;
     padding: 0;
+    li {
+      background-color: #FFFFFF;
+      box-shadow: 5px 5px 10px 0px #6d6d6d;
+      padding: 1em;
+      margin-bottom: 1em;
+    }
   }
   .roastName {
     @include textFormat(22px, $l-spacing: 1px);
