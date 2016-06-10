@@ -9,6 +9,7 @@
         <p class="roastDescription">
           {{roast.description}}
         </p>
+        <span *ngFor="#flavor of roast.flavor_list">#{{flavor}} </span>
       </li>
     </ul>
   </div>

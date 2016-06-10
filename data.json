@@ -8,10 +8,11 @@
         "flavors": {
           "honeydew": true,
           "pineapple": true,
-          "cola": true,
-          "honey": true
+          "cola": true
         },
-        "description": "We overheard someone from our coffee team describe this one like a “pancake breakfast,” warm and buttery with maple syrup sweetness. Quickly becoming a staff favorite."
+        "flavor_list": ["Honeydew", "Pineapple", "Cola"],
+        "description": "We overheard someone from our coffee team describe this one like a “pancake breakfast,” warm and buttery with maple syrup sweetness. Quickly becoming a staff favorite.",
+        "in_season": true
       },
       "col-el-jordan": {
         "name": "Colombia El Jordan",
@@ -23,7 +24,9 @@
            "cinnamon": true,
             "honey": true
           },
-        "description": "A warm and sweet cup that is well-structured. Notes of honey, vanilla, citrus and apple set the bar for this idyllic Colombian coffee."
+          "flavor_list": ["Tangerine", "Cinnamon", "Honey"],
+        "description": "A warm and sweet cup that is well-structured. Notes of honey, vanilla, citrus and apple set the bar for this idyllic Colombian coffee.",
+        "in_season": false
       },
       "per-chirinos": {
         "name": "Peru Chirinos",
@@ -37,7 +40,9 @@
           "chocolate": true,
           "cinnamon": true
           },
-        "description": "The warm tartness of Fuji apple is balanced by sweet chocolate and vanilla spice."
+          "flavor_list": ["Honey", "Fujiapple", "Vanilla", "Chocolate", "Cinnamon"],
+        "description": "The warm tartness of Fuji apple is balanced by sweet chocolate and vanilla spice.",
+        "in_season": true
       },
       "id-ac-sumatra-gayo": {
         "name": "Sumatra Gayo Mandiri",
@@ -49,7 +54,9 @@
           "stonefruit": true,
           "earthy": true
         },
-        "description": "We've been fans of honey-processed Sumatra since receiving the first test-batch. The Mandiri though, brought to us by family-owned Gayo Mandiri Coffee, is so uniquely fabulous that its almost too good to be true. It is definitely not a typical Sumatran; its the best, most incredible Sumatran we've encountered.  Sweet Syrupy body carries familiar earthy Sumatra undertones into an eruption of watermelon and stone fruit flavors. its a wild and wonderful ride, especially as espresso."
+        "flavor_list": ["Watermelon", "Stone Fruit", "Earthy"],
+        "description": "We've been fans of honey-processed Sumatra since receiving the first test-batch. The Mandiri though, brought to us by family-owned Gayo Mandiri Coffee, is so uniquely fabulous that its almost too good to be true. It is definitely not a typical Sumatran; its the best, most incredible Sumatran we've encountered.  Sweet Syrupy body carries familiar earthy Sumatra undertones into an eruption of watermelon and stone fruit flavors. its a wild and wonderful ride, especially as espresso.",
+        "in_season": true
       },
       "eth-hambela": {
         "name": "Ethiopia Hambela Single Farm",
@@ -61,7 +68,9 @@
           "cranberry": true,
           "strawberry": true
         },
-        "description": "We roast the Hambela to highlight flavors of pomegranate and cranberry balanced by ripe strawberry and shortcake sweetness. Enjoy one of the best coffees we've had the pleasure to roast and serve."
+        "flavor_list": ["Pomegranate", "Cranberry", "Strawberry"],
+        "description": "We roast the Hambela to highlight flavors of pomegranate and cranberry balanced by ripe strawberry and shortcake sweetness. Enjoy one of the best coffees we've had the pleasure to roast and serve.",
+        "in_season": true
       },
       "id-nt-flores-bajawa": {
         "name": "Flores Bajawa Ngura",
@@ -73,7 +82,9 @@
           "malt": true,
           "citrus": true
         },
-        "description": "Sourced from family-owned farms located on the slopes of the Inerie volcano, this wet-hulled Indonesian is of exceptional quality. A sweet aroma is followed by buttery full-bodied flavors of chocolate malt, nicely balanced by subtle citrus acidity. Rich and satisfying!"
+        "flavor_list": ["Chocolate", "Malt", "Citrus"],
+        "description": "Sourced from family-owned farms located on the slopes of the Inerie volcano, this wet-hulled Indonesian is of exceptional quality. A sweet aroma is followed by buttery full-bodied flavors of chocolate malt, nicely balanced by subtle citrus acidity. Rich and satisfying!",
+        "in_season": true
       },
       "mx-nayarit": {
         "name": "Mexico Nayarit",
@@ -84,7 +95,9 @@
           "semisweetchocolate": true,
           "caramel": true
         },
-        "description": "Grown in the rich soil around the extinct volcano, Cerro San Juan, the Mexico Nayarit offers the mildly sweet flavor of caramelized sugar and a velvety body. Semi-sweet chocolate lingers in the finish. Wonderful any time of day and is delightful with or without milk."
+        "flavor_list": ["Semi-sweet Chocolate", "Caramel"],
+        "description": "Grown in the rich soil around the extinct volcano, Cerro San Juan, the Mexico Nayarit offers the mildly sweet flavor of caramelized sugar and a velvety body. Semi-sweet chocolate lingers in the finish. Wonderful any time of day and is delightful with or without milk.",
+        "in_season": true
       },
       "gt-san-jose": {
         "name": "Guatemala San Jose Ocaña",
@@ -95,7 +108,9 @@
           "chocolate": true,
           "peach": true
         },
-        "description": "Guatemalan coffees, with lovely chocolate flavors and just the right acidity, hold a special place in our coffee-loving hearts. The Ocaña, has a medium body and a wonderful subtle brightness that lasts just for a moment before the chocolate re-emerges. Hailing from the Antigua region, Ocaña is a true classic and a crowd pleaser."
+        "flavor_list": ["Chocolate", "Peach"],
+        "description": "Guatemalan coffees, with lovely chocolate flavors and just the right acidity, hold a special place in our coffee-loving hearts. The Ocaña, has a medium body and a wonderful subtle brightness that lasts just for a moment before the chocolate re-emerges. Hailing from the Antigua region, Ocaña is a true classic and a crowd pleaser.",
+        "in_season": true
       },
       "rw-coopac": {
         "name": "Rwanda COOPAC",
@@ -107,7 +122,9 @@
           "fig": true,
           "vanilla": true
         },
-        "description": "The farmers in this cooperative, located in the Western Province, produce a coffee rich and syrupy in body with an overall flavor of apricot and fig. The finish is balanced with an undertone of vanilla sweetness and soft lingering citrus."
+        "flavor_list": ["Apricot", "Fig", "Vanilla"],
+        "description": "The farmers in this cooperative, located in the Western Province, produce a coffee rich and syrupy in body with an overall flavor of apricot and fig. The finish is balanced with an undertone of vanilla sweetness and soft lingering citrus.",
+        "in_season": true
       },
       "sv-oak-aged": {
         "name": "Oak Aged",
@@ -119,7 +136,9 @@
           "chocolate": true,
           "oak": true
         },
-        "description": "We love to celebrate relationships, and This project brings together two great ones: The Menendez family who grow coffee in El Salvador, and Sokol Blosser Winery of Dayton, Oregon. We age the Menendez’s green coffee in oak barrels that once held Sokol Blosser’s famous Pinot Noir, infusing the rich, chocolaty Salvadoran coffee With the poignant grape notes of Willamette Valley Pinot Noir."
+        "flavor_list": ["Redwine", "Chocolate", "Oak"],
+        "description": "We love to celebrate relationships, and This project brings together two great ones: The Menendez family who grow coffee in El Salvador, and Sokol Blosser Winery of Dayton, Oregon. We age the Menendez’s green coffee in oak barrels that once held Sokol Blosser’s famous Pinot Noir, infusing the rich, chocolaty Salvadoran coffee With the poignant grape notes of Willamette Valley Pinot Noir.",
+        "in_season": true
       },
       "col-granja-esperanza": {
         "name": "Colombia Granja La Esperanza",
@@ -131,7 +150,9 @@
           "strawberry": true,
           "darkchocolate": true
         },
-        "description": "On their eponymous farm Granja La Esperanza has taken the Castillo variety, normally grown for its resiliency and high yields, to new levels of greatness. Through careful experimentation in agronomy and natural processing they have produced a cup with fruit forward notes of blueberry and strawberry balanced by notes of dark chocolate."
+        "flavor_list": ["Blueberry", "Strawberry", "Dark Chocolate"],
+        "description": "On their eponymous farm Granja La Esperanza has taken the Castillo variety, normally grown for its resiliency and high yields, to new levels of greatness. Through careful experimentation in agronomy and natural processing they have produced a cup with fruit forward notes of blueberry and strawberry balanced by notes of dark chocolate.",
+        "in_season": true
       },
       "id-sb-sumatra-mutu": {
         "name": "Indonesia Sumatra Mutu Batak",
@@ -143,7 +164,9 @@
           "redwine": true,
           "blackcurrant": true
         },
-        "description": "The town of Lintong Nihuta sits on the southern shore of Lake Toba in Sumatra, and is home to the hundreds of small farms that produce this coffee. These farms grow Ateng, Djember, and Garundang variety plants. The coffee seeds are processed in the characteristic Indonesia Wet-hulling method. this is an intensely herbal cup with notes of oak, red wine, and black currant."
+        "flavor_list": ["Oak", "Redwine", "Blackcurrant"],
+        "description": "The town of Lintong Nihuta sits on the southern shore of Lake Toba in Sumatra, and is home to the hundreds of small farms that produce this coffee. These farms grow Ateng, Djember, and Garundang variety plants. The coffee seeds are processed in the characteristic Indonesia Wet-hulling method. this is an intensely herbal cup with notes of oak, red wine, and black currant.",
+        "in_season": true
       },
       "sv-santa-julia": {
         "name": "El Salvador Santa Julia",
@@ -155,7 +178,9 @@
           "molasses": true,
           "greenapple": true
         },
-        "description": "Finca Santa Julia sits on the slopes of Volcan Santa Ana in the Apaneca- Illamatepec mountain range of Western El Salvador. Owned by Alfredo Alvarez, this 65 hectare farm has been producing coffee since 1864. This Red Bourbon lot is wet processed at nearby Beneficio El Manzano. The cup is exquisitely balanced with notes of caramel, molasses, and green apple."
+        "flavor_list": ["Caramel", "Molasses", "Green Apple"],
+        "description": "Finca Santa Julia sits on the slopes of Volcan Santa Ana in the Apaneca- Illamatepec mountain range of Western El Salvador. Owned by Alfredo Alvarez, this 65 hectare farm has been producing coffee since 1864. This Red Bourbon lot is wet processed at nearby Beneficio El Manzano. The cup is exquisitely balanced with notes of caramel, molasses, and green apple.",
+        "in_season": true
       },
       "eth-sidamo-wottona": {
         "name": "Ethiopia Sidamo Wottona Bultuma",
@@ -167,7 +192,9 @@
           "honey": true,
           "floral": true
         },
-        "description": "The Southern Highlands of Ethiopia are home to some of the world’s finest coffees. The 2600 members of the Wottona Bultuma cooperative produced this lot of washed heirloom coffees. The cup is distinctive yet delicate, with bright citrus notes, honeyed sweetness, and floral highlights."
+        "flavor_list": ["Citrus", "Honey", "Floral"],
+        "description": "The Southern Highlands of Ethiopia are home to some of the world’s finest coffees. The 2600 members of the Wottona Bultuma cooperative produced this lot of washed heirloom coffees. The cup is distinctive yet delicate, with bright citrus notes, honeyed sweetness, and floral highlights.",
+        "in_season": true
       },
       "bi-mwakiro": {
         "name": "Mwakiro Burundi",
@@ -179,7 +206,9 @@
           "redwine": true,
           "panela": true
         },
-        "description": "The APROCO cooperative was formed to allow small farm holders higher earning potential and to improve environmental sustainability in the region.  The local washing station offers consistent farm management education.  Coava is honored to support premium prices in reward for the opportunity to showcase this high quality coffee. Pomegranate, red wine, & panela sugar come through in this wonderful offering from Burundi."
+        "flavor_list": ["Pomegranate", "Redwine", "Panela"],
+        "description": "The APROCO cooperative was formed to allow small farm holders higher earning potential and to improve environmental sustainability in the region.  The local washing station offers consistent farm management education.  Coava is honored to support premium prices in reward for the opportunity to showcase this high quality coffee. Pomegranate, red wine, & panela sugar come through in this wonderful offering from Burundi.",
+        "in_season": true
       },
       "br-santa-luzia": {
         "name": "Santa Luzia Brasil",
@@ -191,7 +220,9 @@
           "caramel": true,
           "nuts": true
         },
-        "description": "It's difficult to source high scoring coffee out of Brasil which is why we are proud to offer this coffee from Jose Oliveria.  It's our first year bringing this coffee in but we are confident that it's the beginning of a long term relationship.  The Cerrado Minerio Region is one of few producing high scoring lots and is the only area in Brasil with a 'Protected Geographical Indication'."
+        "flavor_list": ["Chocoalte", "Caramel", "Nuts"],
+        "description": "It's difficult to source high scoring coffee out of Brasil which is why we are proud to offer this coffee from Jose Oliveria.  It's our first year bringing this coffee in but we are confident that it's the beginning of a long term relationship.  The Cerrado Minerio Region is one of few producing high scoring lots and is the only area in Brasil with a 'Protected Geographical Indication'.",
+        "in_season": true
       },
       "eth-kilenso": {
         "name": "Kilenso Ethiopia",
@@ -203,7 +234,9 @@
           "lavender": true,
           "grape": true
         },
-        "description": "Kilenso Mokonissa is one of the smallest villages in the Borena Hagermariam District of Sidama. In the past the coffees coming from Kilenso would have been blended into larger lots and sold under the area’s catch all name “Ardi.” The farmers there use organic practices (though they are too poor to pay for the certification) so as to not waste anything they produce. Lavender and grape jam balance this naturally processed coffee. It is a testament to the diligent care put forth by a very small group of people."
+        "flavor_list": ["Floral", "Lavender", "Grape"],
+        "description": "Kilenso Mokonissa is one of the smallest villages in the Borena Hagermariam District of Sidama. In the past the coffees coming from Kilenso would have been blended into larger lots and sold under the area’s catch all name “Ardi.” The farmers there use organic practices (though they are too poor to pay for the certification) so as to not waste anything they produce. Lavender and grape jam balance this naturally processed coffee. It is a testament to the diligent care put forth by a very small group of people.",
+        "in_season": true
       },
       "eth-maeza": {
         "name": "Maeza Ethiopia",
@@ -215,7 +248,9 @@
           "honey": true,
           "rose": true
         },
-        "description": "To honor our long standing relationship with the Kochere Cooperative we are highlighting a dozen of their top scoring producers. These stalwarts have proven themselves through consistently delivering only the ripest of cherries. After processing and a period of rest we have the green coffee sorted for defects an additional two times longer than other lots coming out of Kochere. This Coava exclusive is named for the beautiful 'blossoms' found on coffee trees before harvest. Black tea, honey comb, and sweet rose blossom mark the Meaza among the most delicious Ethiopian coffees we have ever tasted."
+        "flavor_list": ["Black Tea", "Honey", "Rose"],
+        "description": "To honor our long standing relationship with the Kochere Cooperative we are highlighting a dozen of their top scoring producers. These stalwarts have proven themselves through consistently delivering only the ripest of cherries. After processing and a period of rest we have the green coffee sorted for defects an additional two times longer than other lots coming out of Kochere. This Coava exclusive is named for the beautiful 'blossoms' found on coffee trees before harvest. Black tea, honey comb, and sweet rose blossom mark the Meaza among the most delicious Ethiopian coffees we have ever tasted.",
+        "in_season": true
       },
       "col-el-paraiso": {
         "name": "Colombia El Paraiso",
@@ -227,7 +262,9 @@
           "apple": true,
           "rose": true
         },
-        "description": "Harvested in November 2015 at Huila Gigante by farmer Ernedys Rodriguez, this Caturra variety coffee grown at 1850m is sure not to disappoint. You can expect flavors such as caramel, apple, and rose hips."
+        "flavor_list": ["Caramel", "Apple", "Rose"],
+        "description": "Harvested in November 2015 at Huila Gigante by farmer Ernedys Rodriguez, this Caturra variety coffee grown at 1850m is sure not to disappoint. You can expect flavors such as caramel, apple, and rose hips.",
+        "in_season": true
       },
       "col-los-altares": {
         "name": "Colombia Los Altares",
@@ -239,7 +276,9 @@
           "cocoanib": true,
           "papaya": true
         },
-        "description": "Harvested in November-December 2015 at Huila by farmer Fernando Trujillo, this Caturra variety coffee grown at 1600m is a winner. You can expect flavors such as muscot grape, panela, cocoa nib, and papaya."
+        "flavor_list": ["Panela", "Cocoanib", "Papaya"],
+        "description": "Harvested in November-December 2015 at Huila by farmer Fernando Trujillo, this Caturra variety coffee grown at 1600m is a winner. You can expect flavors such as muscot grape, panela, cocoa nib, and papaya.",
+        "in_season": true
       },
       "col-aguas-claras": {
         "name": "Colombia Aguas Claras",
@@ -251,7 +290,9 @@
           "redcurrant": true,
           "toffee": true
         },
-        "description": "Harvested in November 2015 at Huila, Guadalupe by farmer Jaiver Joven, this Caturra variety coffee grown at 1600m is fantastic. You can expect flavors such as tangerine, red currant, and toffee."
+        "flavor_list": ["Tangerine", "Redcurrant", "Toffee"],
+        "description": "Harvested in November 2015 at Huila, Guadalupe by farmer Jaiver Joven, this Caturra variety coffee grown at 1600m is fantastic. You can expect flavors such as tangerine, red currant, and toffee.",
+        "in_season": true
       },
       "eth-duromina": {
         "name": "Ethiopia Duromina",
@@ -263,7 +304,9 @@
           "brownsugar": true,
           "raspberry": true
         },
-        "description": "Harvested in December 2014-January 2015 at Agaro at the Duromina washing station, this Heirloom variety coffee grown at 1900-2100m is superb. You can expect flavors such as peach, brown sugar, and raspberry jam."
+        "flavor_list": ["Peach", "Brown Sugar", "Raspberry"],
+        "description": "Harvested in December 2014-January 2015 at Agaro at the Duromina washing station, this Heirloom variety coffee grown at 1900-2100m is superb. You can expect flavors such as peach, brown sugar, and raspberry jam.",
+        "in_season": true
       },
       "hn-cocafelol": {
         "name": "Honduras Cocafelol",
@@ -274,7 +317,9 @@
           "darkchocolate": true,
           "hazelnut": true
         },
-        "description": "Why should you drink it? - because these guys are doing it right...  socially conscious, and moving towards being completely organic in the near future.. and they're  producing some really naturally sweet high quality coffee that we refer to as the 'shizza'."
+        "flavor_list": ["Dark Chocolate", "Hazlenut"],
+        "description": "Why should you drink it? - because these guys are doing it right...  socially conscious, and moving towards being completely organic in the near future.. and they're  producing some really naturally sweet high quality coffee that we refer to as the 'shizza'.",
+        "in_season": true
       },
       "pe-santa-josefa": {
         "name": "Peru Santa Josefa",
@@ -285,7 +330,9 @@
           "cascara": true,
           "almond": true
         },
-        "description": "Why should you drink it? -  a deeply rich, exceptional cup of coffee that is honey processed and full of complex flavors and natural sweetness. If there are two things Peru should be famous for, it's THIS particular coffee, and then maybe Machu Picchu.  It's also Rainforest Alliance certified. Traudel Gerhmann Mick is an intense German-Peruvian coffee farmer who speaks several languages and is deeply passionate about experimentation with her coffee lots. With her husband, Juan Luis Vier, an engineer, and with Juan Atkins of Peru Global, she has pivoted from largely conventional coffee to a dedicated specialty focus that includes planting many new varieties and experimenting with anaerobic fermentation, among many other experiments. The farm is lush and beautiful, high in the mountains in Villa Rica."
+        "flavor_list": ["Cascara", "Almond"],
+        "description": "Why should you drink it? -  a deeply rich, exceptional cup of coffee that is honey processed and full of complex flavors and natural sweetness. If there are two things Peru should be famous for, it's THIS particular coffee, and then maybe Machu Picchu.  It's also Rainforest Alliance certified. Traudel Gerhmann Mick is an intense German-Peruvian coffee farmer who speaks several languages and is deeply passionate about experimentation with her coffee lots. With her husband, Juan Luis Vier, an engineer, and with Juan Atkins of Peru Global, she has pivoted from largely conventional coffee to a dedicated specialty focus that includes planting many new varieties and experimenting with anaerobic fermentation, among many other experiments. The farm is lush and beautiful, high in the mountains in Villa Rica.",
+        "in_season": true
       }
   },
 
