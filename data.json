@@ -3,7 +3,8 @@
       "col-el-nevado": {
         "name": "Colombia El Nevado",
         "vendor": {
-          "stumptown": true
+          "stumptown": true,
+          "name": "Stumptown"
           },
         "flavors": {
           "honeydew": true,
@@ -17,7 +18,8 @@
       "col-el-jordan": {
         "name": "Colombia El Jordan",
         "vendor": {
-          "stumptown": true
+          "stumptown": true,
+          "name": "Stumptown"
           },
         "flavors": {
           "tangerine": true,
@@ -31,7 +33,8 @@
       "per-chirinos": {
         "name": "Peru Chirinos",
         "vendor": {
-          "stumptown": true
+          "stumptown": true,
+          "name": "Stumptown"
           },
         "flavors": {
           "honey": true,
@@ -47,7 +50,8 @@
       "id-ac-sumatra-gayo": {
         "name": "Sumatra Gayo Mandiri",
         "vendor": {
-          "extracto": true
+          "extracto": true,
+          "name": "Extracto"
         },
         "flavors": {
           "watermelon": true,
@@ -61,7 +65,8 @@
       "eth-hambela": {
         "name": "Ethiopia Hambela Single Farm",
         "vendor": {
-          "extracto": true
+          "extracto": true,
+          "name": "Extracto"
         },
         "flavors": {
           "pomegranate": true,
@@ -75,7 +80,8 @@
       "id-nt-flores-bajawa": {
         "name": "Flores Bajawa Ngura",
         "vendor": {
-          "extracto": true
+          "extracto": true,
+          "name": "Extracto"
         },
         "flavors": {
           "chocolate": true,
@@ -89,7 +95,8 @@
       "mx-nayarit": {
         "name": "Mexico Nayarit",
         "vendor": {
-          "extracto": true
+          "extracto": true,
+          "name": "Extracto"
         },
         "flavors": {
           "semisweetchocolate": true,
@@ -102,7 +109,8 @@
       "gt-san-jose": {
         "name": "Guatemala San Jose Ocaña",
         "vendor": {
-          "extracto": true
+          "extracto": true,
+          "name": "Extracto"
         },
         "flavors": {
           "chocolate": true,
@@ -115,7 +123,8 @@
       "rw-coopac": {
         "name": "Rwanda COOPAC",
         "vendor": {
-          "extracto": true
+          "extracto": true,
+          "name": "Extracto"
         },
         "flavors": {
           "apricot": true,
@@ -129,7 +138,8 @@
       "sv-oak-aged": {
         "name": "Oak Aged",
         "vendor": {
-          "water-avenue": true
+          "water-avenue": true,
+          "name": "Water Avenue"
         },
         "flavors": {
           "redwine": true,
@@ -143,7 +153,8 @@
       "col-granja-esperanza": {
         "name": "Colombia Granja La Esperanza",
         "vendor": {
-          "water-avenue": true
+          "water-avenue": true,
+          "name": "Water Avenue"
         },
         "flavors": {
           "blueberry": true,
@@ -157,7 +168,8 @@
       "id-sb-sumatra-mutu": {
         "name": "Indonesia Sumatra Mutu Batak",
         "vendor": {
-          "water-avenue": true
+          "water-avenue": true,
+          "name": "Water Avenue"
         },
         "flavors": {
           "oak": true,
@@ -171,7 +183,8 @@
       "sv-santa-julia": {
         "name": "El Salvador Santa Julia",
         "vendor": {
-          "water-avenue": true
+          "water-avenue": true,
+          "name": "Water Avenue"
         },
         "flavors": {
           "caramel": true,
@@ -185,7 +198,8 @@
       "eth-sidamo-wottona": {
         "name": "Ethiopia Sidamo Wottona Bultuma",
         "vendor": {
-          "water-avenue": true
+          "water-avenue": true,
+          "name": "Water Avenue"
         },
         "flavors": {
           "citrus": true,
@@ -199,7 +213,8 @@
       "bi-mwakiro": {
         "name": "Mwakiro Burundi",
         "vendor": {
-          "coava": true
+          "coava": true,
+          "name": "Coava"
         },
         "flavors": {
           "pomegranate": true,
@@ -213,7 +228,8 @@
       "br-santa-luzia": {
         "name": "Santa Luzia Brasil",
         "vendor": {
-          "coava": true
+          "coava": true,
+          "name": "Coava"
         },
         "flavors": {
           "chocolate": true,
@@ -227,7 +243,8 @@
       "eth-kilenso": {
         "name": "Kilenso Ethiopia",
         "vendor": {
-          "coava": true
+          "coava": true,
+          "name": "Coava"
         },
         "flavors": {
           "floral": true,
@@ -241,7 +258,8 @@
       "eth-maeza": {
         "name": "Maeza Ethiopia",
         "vendor": {
-          "coava": true
+          "coava": true,
+          "name": "Coava"
         },
         "flavors": {
           "blacktea": true,
@@ -255,7 +273,8 @@
       "col-el-paraiso": {
         "name": "Colombia El Paraiso",
         "vendor": {
-          "heart": true
+          "heart": true,
+          "name": "Heart"
         },
         "flavors": {
           "caramel": true,
@@ -269,7 +288,8 @@
       "col-los-altares": {
         "name": "Colombia Los Altares",
         "vendor": {
-          "heart": true
+          "heart": true,
+          "name": "Heart"
         },
         "flavors": {
           "panela": true,
@@ -283,7 +303,8 @@
       "col-aguas-claras": {
         "name": "Colombia Aguas Claras",
         "vendor": {
-          "heart": true
+          "heart": true,
+          "name": "Heart"
         },
         "flavors": {
           "tangerine": true,
@@ -297,7 +318,8 @@
       "eth-duromina": {
         "name": "Ethiopia Duromina",
         "vendor": {
-          "heart": true
+          "heart": true,
+          "name": "Heart"
         },
         "flavors": {
           "peach": true,
@@ -311,7 +333,8 @@
       "hn-cocafelol": {
         "name": "Honduras Cocafelol",
         "vendor": {
-          "red-e-cafe": true
+          "red-e-cafe": true,
+          "name": "Red E Cafe"
         },
         "flavors": {
           "darkchocolate": true,
@@ -324,7 +347,8 @@
       "pe-santa-josefa": {
         "name": "Peru Santa Josefa",
         "vendor": {
-          "red-e-cafe": true
+          "red-e-cafe": true,
+          "name": "Red E Cafe"
         },
         "flavors": {
           "cascara": true,
