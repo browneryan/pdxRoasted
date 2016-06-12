@@ -1,18 +1,21 @@
 <div class="contactHeader">
   <h1>Contact</h1>
-  <form class="contactForm">
+  <form class="contactForm" action="https://formspree.io/pdxroasted@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="New submission!" />
     <div class="formField">
       <label for="name">Your Name</label>
-      <input type="text">
+      <input type="text" name="name" required>
     </div>
     <div class="formField">
       <label for="email">Email</label>
-      <input type="text">
+      <input type="email" name="_replyto" required>
     </div>
     <div class="formField">
       <label for="message">Message</label>
-      <input type="text">
+      <input type="text" name="message" required>
     </div>
-    <button type="submit" name="button">SEND</button>
+    <input type="hidden" name="_next" value="//site.io/thanks.html" />
+    <input type="text" name="_gotcha" style="display:none" />
+    <button type="submit" value="Send">send</button>
   </form>
 </div>
