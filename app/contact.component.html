@@ -1,6 +1,6 @@
 <div class="contactHeader">
   <h1>Contact</h1>
-  <form class="contactForm" action="https://formspree.io/pdxroasted@gmail.com" method="POST">
+  <form ngNoForm class="contactForm" action="https://formspree.io/pdxroasted@gmail.com" method="POST">
     <input type="hidden" name="_subject" value="New submission!" />
     <div class="formField">
       <label for="name">Your Name</label>
@@ -14,7 +14,6 @@
       <label for="message">Message</label>
       <input type="text" name="message" required>
     </div>
-    <input type="hidden" name="_next" value="//site.io/thanks.html" />
     <input type="text" name="_gotcha" style="display:none" />
     <button type="submit" value="Send">send</button>
   </form>
