@@ -357,65 +357,6 @@
         "flavor_list": ["Cascara", "Almond"],
         "description": "Why should you drink it? -  a deeply rich, exceptional cup of coffee that is honey processed and full of complex flavors and natural sweetness. If there are two things Peru should be famous for, it's THIS particular coffee, and then maybe Machu Picchu.  It's also Rainforest Alliance certified. Traudel Gerhmann Mick is an intense German-Peruvian coffee farmer who speaks several languages and is deeply passionate about experimentation with her coffee lots. With her husband, Juan Luis Vier, an engineer, and with Juan Atkins of Peru Global, she has pivoted from largely conventional coffee to a dedicated specialty focus that includes planting many new varieties and experimenting with anaerobic fermentation, among many other experiments. The farm is lush and beautiful, high in the mountains in Villa Rica.",
         "in_season": true
-      },
-      "eth-gwangwa-abaya": {
-        "name": "Ethiopia Gwangwa Abaya",
-        "vendor": {
-          "five-points": true,
-          "name": "Five Points Coffee Roasters"
-        },
-        "flavors": {
-          "strawberry": true,
-          "jasmine": true,
-          "citrus": true
-        },
-        "flavor_list": ["Strawberry", "Jasmine", "Citrus"],
-        "description": "This natural process Ethiopian coffee grown at 1895m is outstanding. It is an heirloom variety which means you can anticipate some very unique flavors. You can expect flavors such as strawberry, jasmine, and citrus.",
-        "in_season": true
-      },
-      "gt-san-patricio": {
-        "name": "Guatemala San Patricio El Limon",
-        "vendor": {
-          "five-points": true,
-          "name": "Five Points Coffee Roasters"
-        },
-        "flavors": {
-          "fudge": true,
-          "fig": true
-        },
-        "flavor_list": ["Fudge", "Fig"],
-        "description": "Finca San Patricio el Limón is run by a third-generation family of coffee growers led by Mr. Guadalupe Alberto Reyes Aguilar. Since its beginnings, the farm’s main objective is to produce the highest quality coffee. Increased production at the farm has led the family to install a wet-mill and water treatment facility, where coffee cherries are de-pulped in an eco-friendly manner. San Patricio el Limón prioritizes protecting the fauna and flora of the farm and the surrounding ecosystem. The area is home to a variety of birds and animals, and hunting is prohibited on the property.",
-        "in_season": true
-      },
-      "pe-flor-del-sapote": {
-        "name": "Peru La Flor Del Sapote",
-        "vendor": {
-          "five-points": true,
-          "name": "Five Points Coffee Roasters"
-        },
-        "flavors": {
-          "vanilla": true,
-          "chocolate": true,
-          "melon": true
-        },
-        "flavor_list": ["Vanilla", "Chocolate", "Melon"],
-        "description": "Hailing from the Cajamarca region in Peru, farmer Rony Lavan Guerrero grows a wonderful coffee that evokes flavors like vanilla liquor, chocolate cake, and sweet melon. It is a variety of Caturra (60%), Typica (30%), and Pache (10%) grown at 1750m and goes through a washed process.",
-        "in_season": true
-      },
-      "pe-santa-josefa-five": {
-        "name": "Peru Santa Josefa",
-        "vendor": {
-          "five-points": true,
-          "name": "Five Points Coffee Roasters"
-        },
-        "flavors": {
-          "darkchocolate": true,
-          "toffee": true,
-          "melon": true
-        },
-        "flavor_list": ["Dark Chocolate", "Toffee", "Melon"],
-        "description": "Traudel Gerhmann Mick is a German-Peruvian coffee farmer who speaks several languages and is deeply passionate about experimentation with her coffee lots. With her husband, Juan Luis Vier, an engineer, and Juan Atkins of Peru Global, she has pivoted from largely conventional coffee to a dedicated specialty focus that includes planting many new varieties and processing experiments. The farm is lush and beautiful, located high in the mountains of Villa Rica.",
-        "in_season": true
       }
   },
 
@@ -469,8 +410,7 @@
       "name": "Vanilla",
       "roasts": {
         "per-chirinos": true,
-        "rw-coopac": true,
-        "pe-flor-del-sapote": true
+        "rw-coopac": true
       }
     },
     "chocolate": {
@@ -480,16 +420,14 @@
         "gt-san-jose": true,
         "id-nt-flores-bajawa": true,
         "per-chirinos": true,
-        "sv-oak-aged": true,
-        "pe-flor-del-sapote": true
+        "sv-oak-aged": true
       }
     },
     "darkchocolate": {
       "name": "Dark Chocolate",
       "roasts": {
         "col-granja-esperanza": true,
-        "hn-cocafelol": true,
-        "pe-santa-josefa-five": true
+        "hn-cocafelol": true
       }
     },
     "semisweetchocolate": {
@@ -533,8 +471,7 @@
       "name": "Strawberry",
       "roasts": {
         "eth-hambela": true,
-        "col-granja-esperanza": true,
-        "eth-gwangwa-abaya": true
+        "col-granja-esperanza": true
       }
     },
     "malt": {
@@ -547,8 +484,7 @@
       "name": "Citrus",
       "roasts": {
         "id-nt-flores-bajawa": true,
-        "eth-sidamo-wottona": true,
-        "eth-gwangwa-abaya": true
+        "eth-sidamo-wottona": true
       }
     },
     "caramel": {
@@ -576,8 +512,7 @@
     "fig": {
       "name": "Fig",
       "roasts": {
-        "rw-coopac": true,
-        "gt-san-patricio": true
+        "rw-coopac": true
       }
     },
     "redwine": {
@@ -692,8 +627,7 @@
     "toffee": {
       "name": "Toffee",
       "roasts": {
-        "col-aguas-claras": true,
-        "pe-santa-josefa-five": true
+        "col-aguas-claras": true
       }
     },
     "brownsugar": {
@@ -730,25 +664,6 @@
       "name": "Almond",
       "roasts": {
         "pe-santa-josefa": true
-      }
-    },
-    "fudge": {
-      "name": "Fudge",
-      "roasts": {
-        "gt-san-patricio": true
-      }
-    },
-    "jasmine": {
-      "name": "Jasmine",
-      "roasts": {
-        "eth-gwangwa-abaya": true
-      }
-    },
-    "melon": {
-      "name": "Melon",
-      "roasts": {
-        "pe-flor-del-sapote": true,
-        "pe-santa-josefa-five": true
       }
     }
   }
