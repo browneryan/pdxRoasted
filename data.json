@@ -416,6 +416,110 @@
         "flavor_list": ["Dark Chocolate", "Toffee", "Melon"],
         "description": "Traudel Gerhmann Mick is a German-Peruvian coffee farmer who speaks several languages and is deeply passionate about experimentation with her coffee lots. With her husband, Juan Luis Vier, an engineer, and Juan Atkins of Peru Global, she has pivoted from largely conventional coffee to a dedicated specialty focus that includes planting many new varieties and processing experiments. The farm is lush and beautiful, located high in the mountains of Villa Rica.",
         "in_season": true
+      },
+      "eth-biftu-gudina": {
+        "name": "Ethiopia Biftu Godina",
+        "vendor": {
+          "sterling": true,
+          "name": "Sterling Coffee Roasters"
+        },
+        "flavors": {
+          "peach": true,
+          "tangerine": true,
+          "jasmine": true
+        },
+        "flavor_list": ["Peach", "Tangerine", "Jasmine"],
+        "description": "In the Oromo language, “Biftu” means “morning sun/bright” and “gudina” means “development”. Well, bright development perfectly describes this gem from western Ethiopia, bursting with flavors of peach cobbler, tangerines and strawberries, along with florals like jasmine and rose. Light roasted for drip and press.",
+        "in_season": true
+      },
+      "bol-villa-imperial": {
+        "name": "Bolivia Villa Imperial",
+        "vendor": {
+          "sterling": true,
+          "name": "Sterling Coffee Roasters"
+        },
+        "flavors": {
+          "pineapple": true,
+          "almond": true,
+          "chocolate": true
+        },
+        "flavor_list": ["Pineapple", "Almond", "Chocolate"],
+        "description": "This brilliant mix of caturra and catuai varietals from Villa Imperial + Tres Estrelles is a perfect introduction to Bolivia coffee. Coffee production in Bolivia has fallen in recent years, but what makes it out is great and this year the Villa Imperial was the best. Look for flavors of pineapple, almond brittle and milk chocolate. Light roasted for drip and press.",
+        "in_season": true
+      },
+      "col-tolima-rio": {
+        "name": "Colombia Tolima Del Rio Organic",
+        "vendor": {
+          "cellar-door": true,
+          "name": "Cellar Door Coffee Roasters"
+        },
+        "flavors": {
+          "citrus": true,
+          "taffy": true,
+          "oak": true
+        },
+        "flavor_list": ["Citrus", "Taffy", "Oak"],
+        "description": "Citrus sweetness, salt-water taffy, and oak. Buttery finish and rich, creamy body.",
+        "in_season": true
+      },
+      "ken-muranga-peaberry": {
+        "name": "Kenya Murang'a Peaberry",
+        "vendor": {
+          "cellar-door": true,
+          "name": "Cellar Door Coffee Roasters"
+        },
+        "flavors": {
+          "molasses": true,
+          "mandarin": true,
+          "cranberry": true
+        },
+        "flavor_list": ["Molasses", "Mandarin", "Cranberry"],
+        "description": "Light roast highlights molasses, mandarin and cranberry high notes. Perfect as a pour-over.",
+        "in_season": true
+      },
+      "hnd-la-paz": {
+        "name": "Honduras Fair Trade Organic",
+        "vendor": {
+          "cellar-door": true,
+          "name": "Cellar Door Coffee Roasters"
+        },
+        "flavors": {
+          "caramel": true,
+          "chocolate": true
+        },
+        "flavor_list": ["Caramel", "Chocolate"],
+        "description": "Shade grown, sweet and buttery, like a salted caramel chocolate truffle.  Grown between 1300-1700 meters in Southwestern Honduras, near La Paz. The region is widely known for its high quality coffees and in 2005 it was recognized with a DOP (Protected Origin Denomination) awarded to Cafe de Marcala, the first awarded to a Central American country.",
+        "in_season": true
+      },
+      "bdi-gaharo-hill": {
+        "name": "Burundi Gaharo Hill Natural",
+        "vendor": {
+          "arbor-lodge": true,
+          "name": "The Arbor Lodge"
+        },
+        "flavors": {
+          "grape": true,
+          "passionfruit": true,
+          "caramel": true
+        },
+        "flavor_list": ["Grape", "Passion Fruit", "Caramel"],
+        "description": "This year, we are extremely excited to offer for a very limited time, a custom micro lot of naturally processed coffee from Gaharo Hill in Burundi. Long Miles Coffee took extreme care when preparing this coffee for you and it shows in the cup. This may be the cleanest naturally processed coffee that I have ever had and if you are not typically a fan of naturals, you should be very excited to try this coffee. Things that I think of when drinking this coffee? Hawaiian Punch soda at birthday parties, pounding juice boxes as a kid and sipping POG on a beach in Maui.",
+        "in_season": true
+      },
+      "col-narino": {
+        "name": "Colombia Narino",
+        "vendor": {
+          "arbor-lodge": true,
+          "name": "The Arbor Lodge"
+        },
+        "flavors": {
+          "fujiapple": true,
+          "caramel": true,
+          "nougat": true
+        },
+        "flavor_list": ["Fuji Apple", "Caramel", "Nougat"],
+        "description": "Aurelio Ortega grows his coffee on approximately 1.5 hectares of land, which is equal to about 3.7 acres. He has committed .5 hectares to the forest preserve that surrounds the area and only cultivates coffee on 1 hectare of land. He grows 100% Caturra variety of Arabica coffee on his farm. The coffee is washed and then dry fermented for 20 hours. It is then dried on Parabolic raised beds. Parabolic beds are raised beds that are usually under a shelter or in an area similar to a green house. This is important for proper drying because of the varying micro-climates in Colombia that have high moisture levels year round, making it difficult for coffee to reach the desired internal moisture level in a proper amount of time.",
+        "in_season": true
       }
   },
 
@@ -424,7 +528,8 @@
         "name": "Tangerine",
         "roasts": {
           "col-el-jordan": true,
-          "col-aguas-claras": true
+          "col-aguas-claras": true,
+          "eth-biftu-gudina": true
         }
       },
     "cinnamon": {
@@ -450,7 +555,8 @@
     "pineapple": {
       "name": "Pineapple",
       "roasts": {
-        "col-el-nevado": true
+        "col-el-nevado": true,
+        "bol-villa-imperial": true
       }
     },
     "cola": {
@@ -462,7 +568,8 @@
     "fujiapple": {
       "name": "Fuji Apple",
       "roasts": {
-        "per-chirinos": true
+        "per-chirinos": true,
+        "col-narino": true
       }
     },
     "vanilla": {
@@ -481,7 +588,9 @@
         "id-nt-flores-bajawa": true,
         "per-chirinos": true,
         "sv-oak-aged": true,
-        "pe-flor-del-sapote": true
+        "pe-flor-del-sapote": true,
+        "bol-villa-imperial": true,
+        "hnd-la-paz": true
       }
     },
     "darkchocolate": {
@@ -526,7 +635,8 @@
     "cranberry": {
       "name": "Cranberry",
       "roasts": {
-        "eth-hambela": true
+        "eth-hambela": true,
+        "ken-muranga-peaberry": true
       }
     },
     "strawberry": {
@@ -548,7 +658,8 @@
       "roasts": {
         "id-nt-flores-bajawa": true,
         "eth-sidamo-wottona": true,
-        "eth-gwangwa-abaya": true
+        "eth-gwangwa-abaya": true,
+        "col-tolima-rio": true
       }
     },
     "caramel": {
@@ -557,14 +668,18 @@
         "sv-santa-julia": true,
         "br-santa-luzia": true,
         "col-el-paraiso": true,
-        "mx-nayarit": true
+        "mx-nayarit": true,
+        "hnd-la-paz": true,
+        "bdi-gaharo-hill": true,
+        "col-narino": true
       }
     },
     "peach": {
       "name": "Peach",
       "roasts": {
         "gt-san-jose": true,
-        "eth-duromina": true
+        "eth-duromina": true,
+        "eth-biftu-gudina": true
       }
     },
     "apricot": {
@@ -592,7 +707,8 @@
       "name": "Oak",
       "roasts": {
         "sv-oak-aged": true,
-        "id-sb-sumatra-mutu": true
+        "id-sb-sumatra-mutu": true,
+        "col-tolima-rio": true
       }
     },
     "blueberry": {
@@ -610,7 +726,8 @@
     "molasses": {
       "name": "Molasses",
       "roasts": {
-        "sv-santa-julia": true
+        "sv-santa-julia": true,
+        "ken-muranga-peaberry": true
       }
     },
     "greenapple": {
@@ -636,7 +753,8 @@
     "grape": {
       "name": "Grape",
       "roasts": {
-        "eth-kilenso": true
+        "eth-kilenso": true,
+        "bdi-gaharo-hill": true
       }
     },
     "lavender": {
@@ -729,7 +847,8 @@
     "almond": {
       "name": "Almond",
       "roasts": {
-        "pe-santa-josefa": true
+        "pe-santa-josefa": true,
+        "bol-villa-imperial": true
       }
     },
     "fudge": {
@@ -741,7 +860,8 @@
     "jasmine": {
       "name": "Jasmine",
       "roasts": {
-        "eth-gwangwa-abaya": true
+        "eth-gwangwa-abaya": true,
+        "eth-biftu-gudina": true
       }
     },
     "melon": {
@@ -749,6 +869,30 @@
       "roasts": {
         "pe-flor-del-sapote": true,
         "pe-santa-josefa-five": true
+      }
+    },
+    "taffy": {
+      "name": "Taffy",
+      "roasts": {
+        "col-tolima-rio": true
+      }
+    },
+    "mandarin": {
+      "name": "Mandirin",
+      "roasts": {
+        "ken-muranga-peaberry": true
+      }
+    },
+    "passionfruit": {
+      "name": "Passion Fruit",
+      "roasts": {
+        "bdi-gaharo-hill": true
+      }
+    },
+    "nougat": {
+      "name": "Nougat",
+      "roasts": {
+        "col-narino": true
       }
     }
   }
