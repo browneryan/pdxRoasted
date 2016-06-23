@@ -1,6 +1,7 @@
-import { bootstrap }    from 'angular2/platform/browser';
-import { AppComponent } from './app.component';
-import { provide }      from 'angular2/core';
+import { bootstrap }      from 'angular2/platform/browser';
+import { AppComponent }   from './app.component';
+import { provide }        from 'angular2/core';
+import { FORM_PROVIDERS } from 'angular2/common';
 import {
   ROUTER_PROVIDERS,
   LocationStrategy,
@@ -8,6 +9,7 @@ import {
  }                      from 'angular2/router';
 
 bootstrap(AppComponent, [
+  FORM_PROVIDERS,
   ROUTER_PROVIDERS,
   provide(LocationStrategy, {useClass: HashLocationStrategy})
 ]);
